@@ -38,6 +38,7 @@ const Content = () => {
     verificationLink: "",
     emailVerified: false,
     affiliateCode: "",
+    referralCode: "",
     referralId: "",
     verified: false,
     details: "",

@@ -47,6 +47,7 @@ type investmentsProp = {
     investmentId: string,
     days: number,
     payAmount: number,
+    packageName: string,
     investmentAmount: number,
 }
 

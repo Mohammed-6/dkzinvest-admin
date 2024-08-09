@@ -148,6 +148,7 @@ const Content = () => {
                   <select
                     className="w-full px-2 py-3 border border-gray-200 rounded-md"
                     onChange={formSelectChange}
+                    name="clientId"
                   >
                     <option value="">Select</option>
                     {prereq.customer !== undefined &&

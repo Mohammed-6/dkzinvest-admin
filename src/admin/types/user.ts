@@ -18,6 +18,7 @@ export type userProps = {
   branch: string;
   franchise: string;
   rememberToken: string;
+  referralCode:string;
   status: boolean;
   verificationLink: string;
   emailVerified: boolean;

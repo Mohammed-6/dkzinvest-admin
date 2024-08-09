@@ -94,7 +94,7 @@ const Content = () => {
                   <td className="border p-2">Created on</td>
                   <td className="border p-2">Client Name</td>
                   <td className="border p-2">Package Name</td>
-                  <td className="border p-2">Client Id</td>
+                  <td className="border p-2">Investments</td>
                   <td className="border p-2">Capital Investment</td>
                   <td className="border p-2">Action</td>
                 </tr>
@@ -114,13 +114,15 @@ const Content = () => {
                         )}
                       </td>
                       <td className="border p-2">{data.clientName}</td>
-                      <td className="border p-2">{data.packageName}</td>
+                      <td className="border p-2">
+                        {data.investments[0].packageName}
+                      </td>
                       <td className="border p-2">
                         <div
                           className="text-blue-500 hover:cursor-pointer"
                           onClick={() => getTransaction(data.clientId)}
                         >
-                          {data.customerId}
+                          Investments
                         </div>
                       </td>
                       <td className="border p-2">₹{data.capitalInvested}</td>
@@ -174,7 +176,7 @@ const Detail = (props: detailProps) => {
   };
   return (
     <>
-      <div className="fixed inset-0 bg-black/50">
+      <div className="fixed inset-0 bg-black/50 overflow-y-scroll">
         <div className="max-w-3xl mx-auto">
           <div className="card">
             <div className="card-header">
@@ -274,7 +276,7 @@ const Trans = (props: transProps) => {
 
   return (
     <>
-      <div className="fixed inset-0 bg-black/50">
+      <div className="fixed inset-0 bg-black/50 overflow-y-scroll">
         <div className="max-w-5xl mx-auto">
           <div className="card">
             <div className="card-header">
