@@ -43,7 +43,7 @@ export type customerProps = {
   nominee: string;
   referredBy: string;
   branch: string;
-  currentPlan: string;
+  currentPlan: any;
   payoutDuration: string;
   referralEligibility: boolean;
   franchise: string;

@@ -39,7 +39,8 @@ const Content = () => {
         if (res.data.status === true) {
           localStorage.setItem("dkz_login_token", res.data.token);
           setalert({ alert: true, type: "success", message: "Login success!" });
-          router.push("/admin/dashboard");
+          // router.push("/admin/dashboard");
+          window.location.href = "/admin/dashboard";
         } else {
           setalert({
             alert: true,
